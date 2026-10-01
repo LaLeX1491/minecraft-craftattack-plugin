@@ -1,0 +1,7 @@
+name: craftattack
+version: '1.0'
+main: de.lalex.craftattack.Main
+api-version: '1.21'
+prefix: CraftAttackPlugin
+authors: [ Max Schröder ]
+description: Plugin supporting all features from Craftattack 
