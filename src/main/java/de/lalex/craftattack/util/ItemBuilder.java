@@ -1,6 +1,7 @@
 package de.lalex.craftattack.util;
 
 import net.kyori.adventure.text.TextComponent;
+import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -11,10 +12,10 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.Arrays;
 import java.util.List;
 
-public class ItemBuilder {
+public final class ItemBuilder {
 
-    private ItemMeta itemMeta;
-    private ItemStack itemStack;
+    private final ItemMeta itemMeta;
+    private final ItemStack itemStack;
 
     public ItemBuilder(Material mat) {
         itemStack = new ItemStack(mat);
@@ -22,13 +23,13 @@ public class ItemBuilder {
     }
 
     public ItemBuilder setDisplayName(String name) {
-        itemMeta.displayName(LegacyComponentSerializer.legacySection().deserialize(name));
+        itemMeta.displayName(LegacyComponentSerializer.legacySection().deserialize(name).decorationIfAbsent(TextDecoration.ITALIC, TextDecoration.State.FALSE));
         return this;
     }
 
     public ItemBuilder setLore(String... s) {
         List<TextComponent> lore = Arrays.stream(s)
-                .map(line -> LegacyComponentSerializer.legacySection().deserialize(line))
+                .map(line -> LegacyComponentSerializer.legacySection().deserialize(line).decorationIfAbsent(TextDecoration.ITALIC, TextDecoration.State.FALSE))
                 .toList();
         itemMeta.lore(lore);
         return this;

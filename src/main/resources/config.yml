@@ -1,0 +1,18 @@
+# --------------------------------------------------
+#
+# DEFAULT CONFIG OF THE CRAFTATTACK PLUGIN
+#
+# --------------------------------------------------
+
+prefix: "&9CraftAttackSystem &8»&r"
+dragon-egg:
+  allow-dupes: false
+  lore: "&aDies ist das original!"
+
+status:
+  duration: 6h # Enter none for infinite
+
+# Controls if the worlds are open
+worlds-open:
+  end: false
+  nether: false

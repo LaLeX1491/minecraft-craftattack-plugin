@@ -1,0 +1,40 @@
+# --------------------------------------------------
+#
+# CONFIG FOR ALL MESSAGES SENT
+# default placeholders:
+#   %player% - The players name
+#   %prefix% - Adds the plugins prefix
+#
+# If you don't want any message at the specific point, just set the variable to "null". It will be interpreted correctly.
+# "\n" Will be correctly interpreted as new line.
+#
+# --------------------------------------------------
+welcomeMessage: "%prefix% &aWillkommen, %player%"
+
+noPermission: "%prefix% &cDu hast dazu keine Rechte!"
+
+# Additional Placeholders: %command% for the entered command and %args% for the arguments (format <X|Y>)
+wrongCommandUsage: "%prefix% &cBenutze: /%command% %args%"
+
+#
+# Hat command
+#
+hat:
+  no-item-in-hand: "%prefix% &cDu musst etwas in der Hand halten!"
+  successfully-switched: "%prefix% &aItem wurde auf deinen Kopf gesetzt!"
+
+#
+# Portal messages
+#
+netherOpen: "%prefix% &aDer Nether ist derzeit aktiviert."
+netherClosed: "%prefix% &cDer Nether ist derzeit deaktiviert."
+netherAlreadyOpen: "%prefix% &cDer Nether ist bereits aktiviert."
+netherAlreadyClosed: "%prefix% &cDer Nether ist bereits deaktiviert."
+netherNowOpen: "%prefix% &aDer Nether ist jetzt aktiviert."
+netherNowClosed: "%prefix% &cDer Nether ist jetzt deaktiviert."
+endClosed: "%prefix% &cDas End ist derzeit deaktiviert."
+endOpen: "%prefix% &aDas End ist derzeit aktiviert."
+endAlreadyOpen: "%prefix% &cDas End ist bereits aktiviert."
+endAlreadyClosed: "%prefix% &cDas End ist bereits deaktiviert."
+endNowOpen: "%prefix% &aDas End ist jetzt aktiviert."
+endNowClosed: "%prefix% &cDas End ist jetzt deaktiviert."

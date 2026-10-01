@@ -8,11 +8,11 @@ import org.jetbrains.annotations.NotNull;
 import java.util.HashMap;
 import java.util.UUID;
 
-public final class ChairSystem {
+public final class ChairService {
 
     private static final HashMap<UUID, ArmorStand> seats = new HashMap<>();
 
-    private ChairSystem() {}
+    private ChairService() {}
 
     public static void sit(@NotNull Player player, @NotNull Location loc) {
         if(!seats.containsKey(player.getUniqueId())) {

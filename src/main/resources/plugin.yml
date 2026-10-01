@@ -1,7 +1,21 @@
-name: craftattack
+name: CraftAttackPlugin
 version: '1.0'
 main: de.lalex.craftattack.Main
 api-version: '1.21'
 prefix: CraftAttackPlugin
 authors: [ Max Schröder ]
-description: Plugin supporting all features from Craftattack 
+description: Plugin supporting all features from CraftAttack 13
+commands:
+  hat:
+    description: Puts the item in hand onto the hat
+    usage: /hat
+  sit:
+    description: Makes the player sit
+    usage: /sit
+    aliases: [chair]
+  nether:
+    description: Enable or disable the Nether world.
+    usage: /nether <on|off>
+  end:
+    description: Enable or disable the End world.
+    usage: /end <on|off>
